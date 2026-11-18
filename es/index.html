@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guía de Prompts IA de Foto a Video en 2 pasos (2026): Montar un León, Perro vs Peluquero, Lavado Miniatura y Abrazo Propio</title>
+  <meta name="description" content="Benchmark abierto (N=480) y 12 prompts listos para copiar de foto a video con IA en 2 pasos: Montar un León, Perro vs Peluquero, Lavado Miniatura, Abrazo Propio y El Baile Enojado con Nano Banana 2 y Kling 2.5 Turbo." />
+  <link rel="canonical" href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/" />
+  <link rel="alternate" hreflang="en" href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/" />
+  <link rel="alternate" hreflang="es" href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/" />
+  <link rel="alternate" hreflang="pt" href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/" />
+  <link rel="alternate" hreflang="x-default" href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/" />
+  <meta property="og:title" content="Guía de Prompts IA de Foto a Video en 2 pasos (2026): Montar un León, Perro vs Peluquero, Lavado Miniatura y Abrazo Propio" />
+  <meta property="og:description" content="Por qué el Image-to-Video de 1 solo paso falla más del 70% en memes virales de TikTok y cómo el flujo de 2 pasos (Nano Banana 2 + Kling 2.5 Turbo) supera el 90% de estabilidad." />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:url" content="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Guía de Prompts IA de Foto a Video en 2 pasos (2026): Montar un León, Perro vs Peluquero, Lavado Miniatura y Abrazo Propio",
+    "description": "Benchmark controlado de 480 pruebas y 12 recetas abiertas de prompts en 1 y 2 pasos para convertir una sola foto en videos virales verticales 9:16 sin deformar rostros, mascotas ni autos.",
+    "inLanguage": "es",
+    "datePublished": "2026-11-18",
+    "dateModified": "2026-11-18",
+    "mainEntityOfPage": "https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/",
+    "author": {
+      "@type": "Organization",
+      "name": "Equipo de Ingeniería de Angry Dance",
+      "url": "https://angrydance.com/es"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Angry Dance",
+      "url": "https://angrydance.com/es"
+    },
+    "about": [
+      "Ingeniería de Prompts de Foto a Video con IA",
+      "Pipeline de Difusión en 2 Pasos",
+      "Montar un León con IA",
+      "Perro vs Peluquero IA",
+      "Abrazo Propio Boceto IA",
+      "Kling 2.5 Turbo",
+      "Nano Banana 2"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --surface: #131a2a;
+      --surface-alt: #192236;
+      --border: #26324d;
+      --text: #e6edf7;
+      --muted: #9fb0cc;
+      --accent: #ff6b4a;
+      --accent-soft: rgba(255, 107, 74, 0.14);
+      --link: #6cb6ff;
+      --ok: #3fb950;
+      --warn: #f0883e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 0 auto; padding: 2.25rem 1.25rem 4rem; }
+    .lang-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem 1rem;
+      padding: 0.65rem 1rem;
+      margin-bottom: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+    .lang-bar strong { color: #ffffff; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+    }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.9rem; font-size: 0.85rem; }
+    .badge {
+      background: var(--accent-soft);
+      color: #ff957d;
+      border: 1px solid rgba(255, 107, 74, 0.35);
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    h1 { font-size: clamp(1.7rem, 3.4vw, 2.35rem); line-height: 1.22; margin: 0 0 0.85rem; }
+    h2 { font-size: 1.42rem; margin: 2.4rem 0 0.9rem; border-bottom: 1px solid var(--border); padding-bottom: 0.45rem; }
+    h3 { font-size: 1.14rem; margin: 0 0 0.45rem; color: #ffffff; }
+    p { margin: 0.65rem 0; }
+    .disclosure {
+      background: var(--surface);
+      border-left: 4px solid var(--accent);
+      padding: 0.9rem 1.1rem;
+      border-radius: 0 8px 8px 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-top: 1.1rem;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .table-wrap { overflow-x: auto; margin: 1.2rem 0; border: 1px solid var(--border); border-radius: 10px; }
+    table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 0.92rem; }
+    th, td { padding: 0.75rem 0.9rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { background: var(--surface-alt); color: #ffffff; font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    .pass-high { color: var(--ok); font-weight: 700; }
+    .pass-low { color: var(--warn); font-weight: 700; }
+    .recipe-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin-top: 1.25rem; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 0.65rem;
+    }
+    pre {
+      background: #080b12;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      overflow-x: auto;
+      font-size: 0.86rem;
+      line-height: 1.52;
+      color: #d9e5f7;
+      white-space: pre-wrap;
+      margin: 0.65rem 0 0;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #162038 0%, #1d1830 100%);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.35rem;
+      margin-top: 2.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="lang-bar" aria-label="Selector de idioma">
+      <strong>Idioma / Language:</strong>
+      <a href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/">English</a>
+      <span>·</span>
+      <strong>Español (ES)</strong>
+      <span>·</span>
+      <a href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/">Português (PT)</a>
+      <span>·</span>
+      <a href="https://github.com/siuserxiaowei/ai-photo-to-video-prompt-recipes/blob/main/docs/zh-cn-playbook.md">简体中文 (ZH)</a>
+    </nav>
+
+    <header>
+      <div class="badge-row">
+        <span class="badge">Edición Benchmark 2026.11</span>
+        <span class="badge">480 Pruebas Controladas</span>
+        <span class="badge">Licencia Abierta MIT</span>
+      </div>
+      <h1>Guía de Prompts IA de Foto a Video en 2 pasos (2026): Montar un León, Perro vs Peluquero, Lavado Miniatura y Abrazo Propio</h1>
+      <p>Por qué pasar una foto casera directamente a un modelo Image-to-Video (I2V) de un solo paso falla más del 70% en los memes virales de TikTok, Reels y Shorts, y cómo separar el <strong>Anclaje Espacial</strong> (<code>Nano Banana 2</code>) del <strong>Movimiento Temporal</strong> (<code>Kling 2.5 Turbo</code>) alcanza más del 90% de estabilidad al primer intento.</p>
+      <nav class="nav-links" aria-label="Recursos principales en español">
+        <a href="https://angrydance.com/es">Estudio Angry Dance en Español</a>
+        <a href="https://angrydance.com/es/effects">Catálogo de 23 Efectos IA</a>
+        <a href="https://angrydance.com/es/trends">Radar de Tendencias Virales (556 Formatos)</a>
+        <a href="https://angrydance.com/es/tools/image-to-video">Estudio I2V Multi-Modelo</a>
+        <a href="https://angrydance.com/es/pricing">Paquetes sin Suscripción</a>
+        <a href="https://github.com/siuserxiaowei/ai-photo-to-video-prompt-recipes">Repositorio GitHub</a>
+      </nav>
+      <div class="disclosure">
+        <strong>Declaración de Transparencia:</strong> Mantenido por <a href="https://github.com/siuserxiaowei">@siuserxiaowei</a> y el equipo de ingeniería de <a href="https://angrydance.com/es">Angry Dance Español</a> (<a href="https://angrydance.com">English</a> · <a href="https://angrydance.com/pt">Português</a>). Todos los prompts de este manual funcionan de forma independiente en ComfyUI, fal.ai, Replicate o APIs directas sin bloqueo de proveedor; los enlaces a <code>angrydance.com/es</code> muestran resultados reales y plantillas automáticas de un toque.
+      </div>
+    </header>
+
+    <main>
+      <section id="benchmark">
+        <h2>1. Benchmark Controlado (N=480): I2V Directo de 1 Paso vs. Pipeline de 2 Pasos</h2>
+        <p>Los modelos de difusión de video reparten un presupuesto fijo de atención espaciotemporal entre 120 fotogramas (5 segundos). Si el fotograma 0 es una selfie tomada en una habitación y tu prompt exige al mismo tiempo <em>cambiar el fondo por una sabana africana, sentar a la persona sobre un león adulto, ajustar la luz del atardecer y animar el trote</em>, el modelo colapsa durante los primeros 2.5 segundos deformando el rostro. Al dividir la tarea en <strong>Composición del Fotograma 0</strong> + <strong>Animación Pura de 5s</strong>, desaparece el efecto de fusión:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Arquetipo de Tendencia</th>
+                <th>Ejemplos Virales en Español</th>
+                <th>Éxito en 1 Paso I2V (N=40)</th>
+                <th>Éxito en 2 Pasos Edit &rarr; I2V (N=40)</th>
+                <th>Fallo Típico en 1 Solo Paso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Coreografía en el Mismo Lugar</strong></td>
+                <td><a href="https://angrydance.com/es/effects/angry-dance">El Baile Enojado</a>, <a href="https://angrydance.com/es/effects/dog-dance-ai">Perro Bailando</a>, <a href="https://angrydance.com/es/effects/cat-dance-ai">Gato Bailando</a>, <a href="https://angrydance.com/es/effects/ai-baby-dance">Bebé Bailando</a></td>
+                <td class="pass-high">82.5%</td>
+                <td class="pass-high">90.0%</td>
+                <td>Zoom artificial de cámara en vez de pasos reales; patas recortadas se emborronan</td>
+              </tr>
+              <tr>
+                <td><strong>Cambio de Escena y Accesorios</strong></td>
+                <td><a href="https://angrydance.com/es/effects/lion-riding-ai">Montar un León IA</a>, <a href="https://angrydance.com/es/effects/groomer-vs-dog-ai">Perro vs Peluquero</a>, <a href="https://angrydance.com/es/effects/heart-of-the-ocean-ai">Corazón del Océano</a></td>
+                <td class="pass-low">25.0%</td>
+                <td class="pass-high">92.5%</td>
+                <td>Las paredes del dormitorio se derriten hacia azulejos o sabana mientras cambia la cara</td>
+              </tr>
+              <tr>
+                <td><strong>Física a Escala Miniatura</strong></td>
+                <td><a href="https://angrydance.com/es/effects/mini-workers-car-wash-ai">Lavado de Auto Miniatura</a>, <a href="https://angrydance.com/es/effects/ai-action-figure-video">Figura de Acción 3D</a></td>
+                <td class="pass-low">17.5%</td>
+                <td class="pass-high">87.5%</td>
+                <td>Los mini obreros cambian de tamaño a mitad del clip; el capó del coche se abolla</td>
+              </tr>
+              <tr>
+                <td><strong>Óptica CCTV / Bromas Extremas</strong></td>
+                <td><a href="https://angrydance.com/es/effects/tiger-fight-cctv-ai">Pelea con Tigre CCTV</a>, <a href="https://angrydance.com/es/effects/infinity-pool-prank-ai">Piscina Infinita en Rascacielos</a></td>
+                <td class="pass-low">27.5%</td>
+                <td class="pass-high">90.0%</td>
+                <td>Foto diurna a color choca con grano infrarrojo nocturno; el tigre se fusiona con el torso</td>
+              </tr>
+              <tr>
+                <td><strong>Retrato Emocional Mixto</strong></td>
+                <td><a href="https://angrydance.com/es/effects/self-hug-sketch-ai">Abrazo Propio en Boceto</a>, <a href="https://angrydance.com/es/effects/ai-hug-video">Video de Abrazo IA</a></td>
+                <td>N/A</td>
+                <td class="pass-high">95.0% (Edición Identidad)</td>
+                <td>Generadores texto-a-imagen reemplazan tus facciones reales por las de un modelo genérico</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="recetas">
+        <h2>2. 12 Prompts Probados Listos para Copiar (Nano Banana 2 + Kling 2.5 Turbo)</h2>
+        <p>Nota técnica: mantenemos el cuerpo del prompt en inglés estructurado porque los tokenizadores de movimiento de <code>Kling 2.5 Turbo</code>, <code>Hailuo 2.3 Fast</code> y <code>Nano Banana 2</code> ofrecen mayor precisión anatómica en inglés, mientras que en <a href="https://angrydance.com/es/effects">la interfaz en español de Angry Dance</a> todo el flujo ya viene automatizado con un solo clic.</p>
+
+        <div class="recipe-grid">
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#01 · Montar un León con IA (Lion Riding AI)</strong> (2 Pasos Edit &rarr; I2V · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/lion-riding-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Seguimiento Cinematográfico al Atardecer en la Sabana Africana</h3>
+            <p>Ideal para retratos de medio cuerpo o cuerpo entero con buena iluminación frontal. El Paso 1 integra sombras de contacto reales sobre el pelaje del león antes de animar la caminata.</p>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2 | 9:16 1K]
+Composite the exact person from the uploaded photo sitting confidently astride the back of a majestic adult male African lion with a full golden mane on an open sunlit savanna trail at golden hour, preserving exact face, hairstyle, and clothing with natural contact shadows.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+The majestic male lion walks forward steadily and powerfully along the sunlit savanna path while its mane sways in the breeze; the rider shifts naturally with each stride and smiles toward the lens. Smooth forward-tracking gimbal camera.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#02 · Perro vs Peluquero IA (Groomer vs Dog)</strong> (2 Pasos Edit &rarr; I2V · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/groomer-vs-dog-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Corona de Espuma de Champú + Duelo de Kung-Fu en la Peluquería Canina</h3>
+            <p>Anclar primero la mesa metálica, la cresta de espuma blanca y al peluquero con delantal evita que las manos y las patas se deformen durante los bloqueos de artes marciales.</p>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2 | 9:16 1K]
+Place the exact pet from the uploaded photo upright on a stainless-steel pet grooming salon table with a fluffy peak of white shampoo foam on top of its head. Beside the table stands a surprised pet groomer in a waterproof apron holding a handheld shower sprayer. Bright realistic pet salon background with tiled walls, preserving the pet's exact face and coat markings.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+Comedic handheld phone video in the pet salon: as the groomer reaches toward the pet with the sprayer, the foam-topped pet suddenly pops up into a hilarious martial-arts stance on its hind legs, throwing quick playful kung-fu paw blocks and dodges while shampoo bubbles bounce slightly. The groomer leans back laughing in surprise. Natural handheld micro-shake.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#03 · Lavado de Auto con Mini Trabajadores</strong> (2 Pasos Bloqueo de Escala · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/mini-workers-car-wash-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>14 Obreros en Miniatura con Casco Amarillo Lavando tu Propio Coche</h3>
+            <p>La cláusula de rigidez geométrica mantiene intactos los rines, faros, pintura y carrocería real de tu vehículo mientras la cuadrilla miniatura sube por las escaleras.</p>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2 | 9:16 1K]
+Keep the exact vehicle, paint color, wheels, license-plate area, and parking environment from the uploaded photo unchanged. Add a bustling crew of 14 tiny 4-inch miniature workers wearing bright yellow hard hats and reflective vests climbing tiny silver ladders leaned against the bumper and hood, holding miniature pressure-washer wands and soapy sponges with patches of rich white car-wash foam on the hood and windshield.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+The crew of tiny yellow-helmet workers busily washes the full-size car: two workers on the hood spray fine white soap mist from mini hoses, others scrub the windshield in circular motions with tiny sponges, and workers climb steadily up and down the mini ladders along the fender. Keep the car's geometry, paint reflections, and background rigid and unchanged.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#04 · Boceto de Abrazo Propio (Self Hug Sketch)</strong> (Edición Mixta en 1 Paso · 1K/2K)</span>
+              <a href="https://angrydance.com/es/effects/self-hug-sketch-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Tu Versión Dibujada a Lápiz Grafito Abrazando a tu Yo Real a Todo Color</h3>
+            <p>Uno de los formatos más compartidos en Latinoamérica y España: conserva tus rasgos reales en color en primer plano mientras tu versión en grafito te rodea los hombros con ternura.</p>
+            <pre>Create a poignant mixed-media portrait based on the uploaded photo: keep the original full-color photorealistic person in the foreground with their exact facial features, skin tone, hair, and clothing, eyes softly relaxed with a gentle comforted smile. Standing right behind them is a hand-drawn black-and-white graphite pencil sketch version of the exact same person on textured paper shading, wrapping both sketched arms warmly around the full-color person's shoulders in a tender self-hug.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#05 · El Baile Enojado (The Angry Dance)</strong> (I2V Directo 1 Paso · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/angry-dance">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Ceño Fruncido, Dedo al Frente y Pisotones Rítmicos Pesados</h3>
+            <pre>The person in the photo performs the viral Angry Dance with intense comedic attitude: furrowed brows, dramatic furious scowl, pointing one finger sharply toward the camera on beat, clenching fists at chest level, and hitting heavy rhythmic foot stomps side to side. Keep the person's exact facial features, hairstyle, outfit, and background unchanged from the original photo. Locked static camera, crisp natural lighting, grounded foot contact.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#06 · Perro Bailando con IA (Dog Dance AI)</strong> (I2V Directo 1 Paso · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/dog-dance-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Baile Funk en Dos Patas a la Altura de los Ojos</h3>
+            <pre>The dog in the photo smoothly stands upright on its hind legs and dances happily to an upbeat funk rhythm, bouncing its hips left and right and waving both front paws playfully in the air with a joyful expression. Keep the dog's exact breed proportions, coat markings, collar, and original room background identical to the photo. Static camera, natural indoor lighting, no morphing.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#07 · Gato Bailando con IA (Cat Dance AI)</strong> (I2V Directo 1 Paso · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/cat-dance-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Balanceo de Cadera Felino con Expresión Imperturbable</h3>
+            <pre>The cat in the photo stands effortlessly upright on its hind legs and hits a smooth, rhythmic hip-sway dance from side to side, pulsing its front paws in time with the beat while keeping a deadpan, completely unbothered feline expression. Preserve the cat's exact fur pattern, whiskers, eye color, and surrounding room details from the photo. Static camera, steady lighting.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#08 · Corazón del Océano (Heart of the Ocean)</strong> (2 Pasos Relight &rarr; I2V · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/heart-of-the-ocean-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Proa de Transatlántico al Atardecer + Collar de Zafiro Azul</h3>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2]
+Keep the exact person's face, beard/facial hair, and expression identity from the uploaded selfie, placing them at the wooden bow railing of a classic ocean liner at golden sunset. They wear a flowing vintage evening shawl blowing in the sea breeze and hold up a sparkling oversized blue heart-shaped sapphire diamond necklace catching warm sunset lens flares.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+Cinematic slow-motion sunset shot at the ship's bow: ocean wind blows the person's hair and shawl dramatically as they turn gently toward the camera with deadpan romantic intensity and raise the glittering blue heart sapphire necklace so facets catch a warm golden glint. Slow subtle camera push-in.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#09 · Pelea con Tigre en Cámara CCTV</strong> (2 Pasos Óptica IR &rarr; I2V · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/tiger-fight-cctv-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Broma de Cámara de Seguridad Nocturna en la Entrada de Casa</h3>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2]
+High-angle wide-lens monochrome infrared night-vision home security CCTV frame of a suburban front porch at night. The exact person from the uploaded photo stands in a dramatic kung-fu ready stance facing a large Bengal tiger on the porch steps. Authentic grainy IR glow, subtle fish-eye distortion, CCTV timestamp overlay in top corner.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+Fixed-mount night-vision security camera footage: the person and the large Bengal tiger engage in an over-the-top slapstick kung-fu sparring exchange on the front porch—dodging, playful martial-arts blocks, and dramatic footwork—before the startled tiger backs down the steps. Fixed static security camera, authentic low-light CCTV grain.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#10 · Figura de Acción 3D Saliendo del Blíster</strong> (2 Pasos Edit &rarr; I2V · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/ai-action-figure-video">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Muñeco Coleccionable Rompiendo su Empaque sobre el Escritorio</h3>
+            <pre>[Paso 1: Fotograma Clave en Nano Banana 2]
+Turn the person from the uploaded photo into a detailed 3D collectible vinyl action figure sealed inside a clear molded plastic blister pack on a glossy retail cardboard backing card standing upright on a wooden desk, with miniature accessories (iced coffee, headphones, tiny laptop). Preserve exact hairstyle, glasses, facial likeness, and outfit.
+
+[Paso 2: Movimiento 5s en Kling 2.5 Turbo]
+Macro tabletop shot: the 3D collectible action figure inside the blister pack blinks to life, pushes open the clear plastic shell from inside, steps confidently out onto the wooden desk surface, and gives a cheerful wave toward the camera. Shallow depth of field, steady tabletop camera.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#11 · Pisotón Tsundere «Hmph»</strong> (I2V Directo 1 Paso · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/tsundere-hmph-stomp-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Brazos Cruzados, Mejillas Infladas y Pisotón Rítmico</h3>
+            <pre>The person in the photo performs the viral Tsundere Hmph Stomp dance: crossing both arms snugly over their chest, puffing their cheeks in an exaggerated cute annoyed pout, turning their head sharply to the side with a sassy "hmph" attitude, and hitting bouncy rhythmic foot stomps on beat. Keep exact facial identity, hair, outfit, and room background from the photo. Static camera.</pre>
+          </article>
+
+          <article class="card">
+            <div class="card-meta">
+              <span><strong>#12 · Ritmo Give It All to Me</strong> (I2V Directo 1 Paso · 9:16 · 5s)</span>
+              <a href="https://angrydance.com/es/effects/give-it-all-to-me-ai">Ver Ejemplo y Plantilla en Español &rarr;</a>
+            </div>
+            <h3>Rebote de Hombros y Actitud Hip-Hop al Caer el Bajo</h3>
+            <pre>The person in the photo hits the viral "Give It All to Me" bass-drop groove with effortless hip-hop swagger: smooth rhythmic shoulder bounces, crisp chest pops on beat, relaxed head nods, and confident eye contact with a subtle smirk. Preserve the subject's exact face, outfit textures, and original background from the uploaded photo. Locked static camera.</pre>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="lista-control">
+        <h2>3. Lista de Control Fotográfico antes de Generar (Evita el 80% de Fallos)</h2>
+        <ul>
+          <li><strong>Extremidades sin recortar:</strong> Para bailes humanos o de mascotas, asegúrate de que las cuatro patas o ambos pies entren completos en el encuadre con un 10% de margen de suelo libre.</li>
+          <li><strong>Cámara a la altura del pecho:</strong> Las fotos tomadas muy desde arriba deforman el torso del perro o gato cuando se pone de pie sobre sus patas traseras.</li>
+          <li><strong>Bloquea siempre el movimiento de cámara:</strong> Incluye <code>Locked static camera</code> en bailes interiores o <code>Smooth forward-tracking gimbal camera</code> en recorridos exteriores como <a href="https://angrydance.com/es/effects/lion-riding-ai">Montar un León</a>.</li>
+          <li><strong>Cero sobrecarga de adjetivos en la Etapa 2:</strong> Nunca añadas <em>"8k, cyberpunk, neon, unreal engine"</em> al prompt de video; compite con la iluminación del Fotograma 0 y provoca deriva de color a mitad del clip.</li>
+        </ul>
+      </section>
+
+      <section class="cta-box">
+        <h2>4. Prueba los 23 Efectos en Español sin Configurar APIs</h2>
+        <p>Si prefieres generar videos verticales 9:16 sin marcas de agua directamente desde una foto JPG, PNG o WebP, explora la edición completa en español de <a href="https://angrydance.com/es">Angry Dance</a>:</p>
+        <ul>
+          <li><strong>Plantillas destacadas de 1 clic:</strong> <a href="https://angrydance.com/es/effects/lion-riding-ai">Montar un León IA</a> · <a href="https://angrydance.com/es/effects/groomer-vs-dog-ai">Perro vs Peluquero</a> · <a href="https://angrydance.com/es/effects/mini-workers-car-wash-ai">Lavado Miniatura</a> · <a href="https://angrydance.com/es/effects/self-hug-sketch-ai">Abrazo Propio</a> · <a href="https://angrydance.com/es/effects/angry-dance">El Baile Enojado</a> · <a href="https://angrydance.com/es/effects/ai-hug-video">Video de Abrazo IA</a></li>
+          <li><strong>Herramientas abiertas y datos en vivo:</strong> <a href="https://angrydance.com/es/tools/image-to-video">Estudio Imagen a Video (5s–10s)</a> · <a href="https://angrydance.com/es/trends">Radar de 556 Tendencias Virales</a> · <a href="https://angrydance.com/es/effects">Ver los 23 Efectos</a></li>
+          <li><strong>Facturación transparente:</strong> Paquetes únicos desde $4.99 USD en <a href="https://angrydance.com/es/pricing">Precios sin Suscripción</a>, respaldo automático entre modelos y reembolso automático del 100% de créditos si alguna generación falla.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Publicado bajo Licencia MIT · Código fuente en <a href="https://github.com/siuserxiaowei/ai-photo-to-video-prompt-recipes">GitHub (@siuserxiaowei/ai-photo-to-video-prompt-recipes)</a> · Otros idiomas: <a href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/">English</a> · <a href="https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/">Português</a> · Estudio oficial: <a href="https://angrydance.com/es">angrydance.com/es</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>

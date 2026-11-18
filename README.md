@@ -1,8 +1,8 @@
 # 2026.11 TikTok AI Photo-to-Video & Viral Dance Prompt Playbook
 
-**English** · [简体中文实战手册 (docs/zh-cn-playbook.md)](./docs/zh-cn-playbook.md) · [Interactive Web Edition (GitHub Pages)](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/) · [Live Trend Radar Dataset](https://angrydance.com/trends)
+**English** · [Español (GitHub Pages /es/)](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/) · [Português (GitHub Pages /pt/)](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/) · [简体中文实战手册 (docs/zh-cn-playbook.md)](./docs/zh-cn-playbook.md) · [Interactive Web Edition (EN)](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/) · [Live Trend Radar Dataset](https://angrydance.com/trends)
 
-> **Maintainer & Affiliation Disclosure**: Open-sourced and maintained by [@siuserxiaowei](https://github.com/siuserxiaowei) and the engineering team behind [Angry Dance](https://angrydance.com) ([中文版入口](https://angrydance.com/zh)). Every prompt recipe in this repository works standalone in your own ComfyUI, fal.ai, Replicate, Google AI Studio (`Nano Banana 2`), or Kuaishou (`Kling 2.5 Turbo`) API workflows—no vendor lock-in required. Links to `angrydance.com` point to live reference outputs and one-tap presets for creators who prefer not to wire APIs manually.
+> **Maintainer & Affiliation Disclosure**: Open-sourced and maintained by [@siuserxiaowei](https://github.com/siuserxiaowei) and the engineering team behind [Angry Dance](https://angrydance.com) ([Español](https://angrydance.com/es) · [Português](https://angrydance.com/pt) · [中文版入口](https://angrydance.com/zh)). Every prompt recipe in this repository works standalone in your own ComfyUI, fal.ai, Replicate, Google AI Studio (`Nano Banana 2`), or Kuaishou (`Kling 2.5 Turbo`) API workflows—no vendor lock-in required. Links to `angrydance.com` point to live reference outputs and one-tap presets for creators who prefer not to wire APIs manually.
 
 ---
 
@@ -220,8 +220,10 @@ The person in the photo hits the viral "Give It All to Me" bass-drop groove with
 
 ---
 
-## Live Resources & Bilingual Documentation
+## Live Resources & Multilingual Documentation (EN / ES / PT / ZH)
 
+- **Spanish Web Guide (Español)**: [`siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/`](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/) — includes Spanish benchmark notes and direct presets on [`angrydance.com/es`](https://angrydance.com/es) ([Montar un León IA](https://angrydance.com/es/effects/lion-riding-ai), [Perro vs Peluquero](https://angrydance.com/es/effects/groomer-vs-dog-ai), [Lavado Miniatura](https://angrydance.com/es/effects/mini-workers-car-wash-ai), [Abrazo Propio](https://angrydance.com/es/effects/self-hug-sketch-ai)).
+- **Portuguese Web Guide (Português)**: [`siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/`](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/pt/) — includes PT-BR/PT-PT creator guidance and presets on [`angrydance.com/pt`](https://angrydance.com/pt) ([Dança de Cachorro IA](https://angrydance.com/pt/effects/dog-dance-ai), [Tosador vs Cachorro](https://angrydance.com/pt/effects/groomer-vs-dog-ai), [Mini Lavagem de Carro](https://angrydance.com/pt/effects/mini-workers-car-wash-ai), [Rascunho de Autoabraço](https://angrydance.com/pt/effects/self-hug-sketch-ai)).
 - **Chinese Playbook (简体中文完整版)**: [`docs/zh-cn-playbook.md`](./docs/zh-cn-playbook.md) — includes localized prompt patterns and Chinese creator guides linking to [`angrydance.com/zh`](https://angrydance.com/zh).
 - **2026 TikTok AI Trend Radar (556 Tracked Formats)**: [`angrydance.com/trends`](https://angrydance.com/trends) — daily view-velocity rankings for single-photo AI video and restyle trends.
 - **Custom Multi-Model I2V Sandbox**: [`angrydance.com/tools/image-to-video`](https://angrydance.com/tools/image-to-video) — test custom 5s–10s prompts across `Kling 2.5 Turbo` and `Muse Video` with automatic fallback and failed-run credit refunds.
