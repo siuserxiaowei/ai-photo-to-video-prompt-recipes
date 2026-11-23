@@ -58,8 +58,14 @@ By splitting complex memes into two deterministic stages:
 | 10 | **Lion Riding AI** (*Savanna Tracking Shot*) | **2-Step** Edit → I2V | `Nano Banana 2` → `Kling 2.5` | `9:16` · 5s | [lion-riding-ai](https://angrydance.com/effects/lion-riding-ai) |
 | 11 | **Tsundere Hmph Stomp** (*Pout & Stomp*) | 1-Step I2V | `Kling 2.5 Turbo` | `9:16` · 5s | [tsundere-hmph-stomp-ai](https://angrydance.com/effects/tsundere-hmph-stomp-ai) |
 | 12 | **Give It All to Me** (*Bass-Drop Swagger*) | 1-Step I2V | `Kling 2.5 Turbo` / `Muse Video` | `9:16` · 5s | [give-it-all-to-me-ai](https://angrydance.com/effects/give-it-all-to-me-ai) |
+| 13 | **GTA 6 AI Filter** (*Vice City Loading Screen*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `Kling 2.6` | `9:16` · 5s | [gta-6-ai-filter](https://angrydance.com/effects/gta-6-ai-filter) |
+| 14 | **AI Christmas Dance** (*Deck the Halls Holiday*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `Kling 2.6` | `9:16` · 5s | [christmas-dance-ai](https://angrydance.com/effects/christmas-dance-ai) |
+| 15 | **GTA 5 Goodbye AI** (*Los Santos Sunset Farewell*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `LTX 2.5 Fast` | `9:16` · 5s | [gta-5-goodbye-ai](https://angrydance.com/effects/gta-5-goodbye-ai) |
+| 16 | **Gothic Vampire Filter** (*Cathedral Reveal*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `Muse Video` | `9:16` · 5s | [vampire-filter-ai](https://angrydance.com/effects/vampire-filter-ai) |
+| 17 | **AI Arrest Prank** (*Night Patrol Comedy*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `Kling 2.6` | `9:16` · 5s | [ai-arrest-prank](https://angrydance.com/effects/ai-arrest-prank) |
+| 18 | **Bulin 47 Shoulder Dance** (*Dame Hombro 52M*) | **2-Step** Edit → I2V | `Nano Banana 2.1` → `Kling 2.6` | `9:16` · 5s | [bulin-47-dance-ai](https://angrydance.com/effects/bulin-47-dance-ai) |
 
-*(Browse all 23 live presets on the [Effects Directory](https://angrydance.com/effects) or test raw custom prompts inside the [Image-to-Video Studio](https://angrydance.com/tools/image-to-video).)*
+*(Browse all **50+ live presets** on the [Effects Directory](https://angrydance.com/effects), test [Nano Banana 2.1](https://angrydance.com/models/nano-banana-2-1), [LTX 2.5 Fast](https://angrydance.com/models/ltx-2-5-fast-i2v), and [Kling 2.6 Motion Control](https://angrydance.com/models/kling-2-6-motion-control), or use 4 free browser-local tools including the [Video to GIF Converter](https://angrydance.com/tools/video-to-gif-converter) at [angrydance.com/free](https://angrydance.com/free).)*
 
 ---
 
