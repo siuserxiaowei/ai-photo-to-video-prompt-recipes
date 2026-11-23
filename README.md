@@ -226,6 +226,19 @@ The person in the photo hits the viral "Give It All to Me" bass-drop groove with
 
 ---
 
+## Free Browser Creator Tools & Live Resources
+
+Browser-local, zero-upload utilities and live references to pair with the recipes above:
+
+- **[BPM Beat-Sync Frame Calculator](https://angrydance.com/tools/bpm-beat-sync-calculator)** — Free client-side BPM beat-sync frame calculator for timing 5s, 6s, and 10s AI dance clips on beat.
+- **[Video Frame Extractor](https://angrydance.com/tools/video-frame-extractor)** — Free Laplacian crisp frame extractor for pulling sharper, cleaner 1-photo inputs from source clips.
+- **[Meme GIF Maker](https://angrydance.com/tools/meme-gif-maker)** — Free watermark-free TikTok meme GIF maker for sharing looping AI outputs across social and chat.
+- **[Daily AI Photo-to-Video Trend Radar](https://angrydance.com/trends)** — Daily view-velocity tracker for emerging single-photo AI video and dance formats.
+- **Flagship One-Tap Presets**: [The Angry Dance (`angry-dance`)](https://angrydance.com/effects/angry-dance) · [Dog Dance AI (`dog-dance-ai`)](https://angrydance.com/effects/dog-dance-ai)
+- **Companion Browser Extension**: [`siuserxiaowei/angrydance-chrome-extension`](https://github.com/siuserxiaowei/angrydance-chrome-extension) — Open-source Chrome extension for quick-launching Angry Dance presets and creator utilities directly from your browser.
+
+---
+
 ## Live Resources & Multilingual Documentation (EN / ES / PT / ZH)
 
 - **Spanish Web Guide (Español)**: [`siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/`](https://siuserxiaowei.github.io/ai-photo-to-video-prompt-recipes/es/) — includes Spanish benchmark notes and direct presets on [`angrydance.com/es`](https://angrydance.com/es) ([Montar un León IA](https://angrydance.com/es/effects/lion-riding-ai), [Perro vs Peluquero](https://angrydance.com/es/effects/groomer-vs-dog-ai), [Lavado Miniatura](https://angrydance.com/es/effects/mini-workers-car-wash-ai), [Abrazo Propio](https://angrydance.com/es/effects/self-hug-sketch-ai)).
